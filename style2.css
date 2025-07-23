@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.main {
+  background-image: url("images/bg.jpg");
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+img {
+  width: 140px;
+  position: relative;
+  z-index: 5;
+  padding-top: 8px;
+}
+
+button {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.boxcnt {
+  height: 70vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  text-align: center;
+}
+
+.boxcnt> :nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.boxcnt> :nth-child(3) {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.sep {
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.842);
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 2px solid rgba(255, 255, 255, 0.715);
+  background-color: rgba(0, 0, 0, 0.566);
+  color: white;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border-radius: 5px;
+
+}
+
+input {
+  height: 40px;
+  width: 220px;
+  border: 2px solid rgba(255, 255, 255, 0.584);
+  background: rgba(0, 0, 0, 0.612);
+  color: white;
+  border-radius: 3px;
+}
+
+.part2 {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part2box {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  /* Stack vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  /* Space between elements */
+  padding: 50px 20px 50px 20px;
+}
+
+.tv {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  /* Maximum size for TV */
+  margin: 0 auto;
+}
+
+.tv img {
+  width: 120%;
+  position: relative;
+  z-index: 2;
+}
+
+.tv video {
+  width: 75%;
+  /* Relative to TV image size */
+  position: absolute;
+  top: 43%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.part2box>div {
+  text-align: center;
+  padding: 0 5vw;
+}
+
+.part2box>div :nth-child(1) {
+  font-weight: bolder;
+  font-size: clamp(24px, 5vw, 40px);
+  /* Responsive font size */
+  display: flex;
+  flex-direction: column;
+}
+
+.part2box>div :nth-child(2) {
+  font-size: clamp(16px, 3vw, 24px);
+  /* Responsive font size */
+  margin-top: 2vw;
+}
+
+section {
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.girl img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.girltxt> :nth-child(1) {
+  font-weight: bolder;
+  font-size: clamp(24px, 5vw, 40px);
+  /* Responsive font size */
+  display: flex;
+  flex-direction: column;
+}
+
+.part2box>div :nth-child(2) {
+  font-size: clamp(16px, 3vw, 24px);
+  /* Responsive font size */
+  margin-top: 2vw;
+}
+
+.box3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 60px 10px 60px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 25px;
+}
+
+.faq {
+  text-align: center;
+  padding: 20px; 
+}
+
+.faqlist {
+  display: flex;
+  padding: 15px;
+  border: 3px solid rgb(145, 145, 145);
+  border-radius: 5px;
+  margin: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+svg {
+  filter: invert(1);
+}
+
+
+.footerlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 10px 30px 50px;
+}
+
+.footerlist ul li {
+  list-style: none;
+  padding: 8px;
+  font-size: 16px;
+  color: rgb(175, 175, 175);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.call {
+  color: rgb(175, 175, 175);
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.fbar{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+}
+
+@media screen and (max-width: 1300px){
+  .part2box , .box3{
+    flex-wrap: wrap;
+  
+  }
+  
+  .boxcnt> :nth-child(1) {
+  padding-top: 20px;  
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.boxcnt> :nth-child(3) {
+  font-size: 18px;
+  font-weight: 300;
+}
+}
